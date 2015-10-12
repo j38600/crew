@@ -46,7 +46,7 @@ $config['index_page'] = '';
 |
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
 */
-$config['uri_protocol']	= 'REQUEST_URI';
+$config['uri_protocol']	= '';
 
 /*
 |--------------------------------------------------------------------------
@@ -430,8 +430,8 @@ $config['global_xss_filtering'] = FALSE;
 | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
 */
 $config['csrf_protection'] = TRUE;
-$config['csrf_token_name'] = 'csrf_apolo';
-$config['csrf_cookie_name'] = 'csrf_bolacha';
+$config['csrf_token_name'] = 'csrfapolo';
+$config['csrf_cookie_name'] = 'csrfbolacha';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = TRUE;
 $config['csrf_exclude_uris'] = array();
