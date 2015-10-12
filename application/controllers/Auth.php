@@ -25,6 +25,8 @@ class Auth extends CI_Controller
                 'admin', ($this->ion_auth->is_admin())? true: false
             );
         }
+        $this->output->enable_profiler(TRUE);
+        
     }
 
 	/**@
@@ -305,7 +307,7 @@ class Auth extends CI_Controller
 			$this->form_validation->set_rules('new', $this->lang->line('reset_password_validation_new_password_label'), 'required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|max_length[' . $this->config->item('max_password_length', 'ion_auth') . ']|matches[new_confirm]');
 			$this->form_validation->set_rules('new_confirm', $this->lang->line('reset_password_validation_new_password_confirm_label'), 'required');
 
-			if ($this->form_validation->run() == false {
+			if ($this->form_validation->run() == false) {
 				// display the form
 
 				// set the flash data error message if there is one
