@@ -16,7 +16,7 @@ class Emitter extends CI_Controller {
                 'admin', ($this->ion_auth->is_admin())? true: false
             );
         }
-    $this->output->enable_profiler(TRUE);
+        $this->output->enable_profiler(TRUE);
     }
 
     public function index()

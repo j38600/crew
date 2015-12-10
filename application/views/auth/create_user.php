@@ -10,8 +10,7 @@ if(validation_errors()){
     </div>
 <?php
 }
-
-<?php echo form_open("auth/create_user", ['class' => 'form-horizontal',
+echo form_open("auth/create_user", ['class' => 'form-horizontal',
                                         'role' => 'form']); ?>
 
 <div class="form-group">
